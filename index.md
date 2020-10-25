@@ -13,8 +13,6 @@ Syntax highlighted code block
 
 ##WEEK 0
 [here] (files/example_homework_0.html)is my 5 interest in R examples 
-## Header 2
-### Header 3
 
 - Bulleted
 - List
