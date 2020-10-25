@@ -12,7 +12,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Mehmet Bahadir Erden
 
 ##WEEK 0
-[here](C:\Users\bahad\OneDrive\Belgeler\GitHub\fall20-mbahadir\files\example_homework_0.html)is my 5 interest in R examples 
+[here](files\example_homework_0.html)is my 5 interest in R examples 
 
 - Bulleted
 - List
