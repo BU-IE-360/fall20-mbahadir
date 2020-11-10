@@ -11,7 +11,7 @@
 
 ##WEEK 1
 
-[here](Homework1\HW1-Bahadir.R) is HW1
+[here](Homework1\Homework1.ipynb) is HW1
 
 ### Class Github Page
 
