@@ -11,7 +11,7 @@
 
 ##WEEK 1
 
-[here](Homework1\Homework1.html) is HW1
+[here](Homework1\Homework1.html) is the HTML file for First Homework
 
 ### Class Github Page
 
