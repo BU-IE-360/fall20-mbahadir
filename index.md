@@ -5,11 +5,11 @@
 
 
 
-##WEEK 0
+## WEEK 0
 
 [here](files\example_homework_0.html) is my 5 interest in R examples 
 
-##WEEK 1
+## WEEK 1
 
 [here](Homework1\Homework1.html) is the HTML file for First Homework
 
