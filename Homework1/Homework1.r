@@ -58,13 +58,13 @@ unemployement_sr=read.csv("is_search.csv")
 str(unemployement_sr)
 unemployement_sr$Date=as.Date(as.yearmon(unemployement_sr$Date))
 
-ggplot(unemployement_sr,aes(x=Date,y=Search,group=year(Date)))+ geom_boxplot(aes(fill=factor(year(Date))))+ 
+ggplot(unemployement_sr,aes(x=year(Date),y=Search))+ geom_boxplot(aes(fill=factor(year(Date))))+ 
   xlab("Years") + ylab("Number of Search for (is ilanı)")+ ggtitle("Boxplot for (is ilanı) Search")+
-  theme(legend.position = "none")
+  theme(legend.position = "none")+scale_x_discrete(limits=c(2006:2018))
 
-ggplot(unemployement_df,aes(x=Tarih,y=issizlik,group=year(Tarih)))+ geom_boxplot(aes(fill=factor(year(Tarih))))+ 
+ggplot(unemployement_df,aes(x=year(Tarih),y=issizlik))+ geom_boxplot(aes(fill=factor(year(Tarih))))+ 
   xlab("Years") + ylab("Percentage of Unemployement ")+ ggtitle("Boxplot for Unemployement Rate")+
-  theme(legend.position = "none")
+  theme(legend.position = "none")+scale_x_discrete(limits=c(2006:2018))
 
 corona_sr=read.csv("Corona_search.csv")
 str(corona_sr)
