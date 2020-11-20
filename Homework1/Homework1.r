@@ -47,7 +47,7 @@ dolar_sr$month_year <-format(dolar_sr$Date,'%Y-%m')
 dolar_sr$Week=week(dolar_sr$Date)
 
 ggplot(dolar_sr,aes(x=factor(year(Date)),y=Search))+ geom_boxplot(aes(fill=factor(year(Date))))+ 
-  xlab("Years") + ylab("Percentage of Unemployement ")+ ggtitle("Boxplot for Dolar Search")+
+  xlab("Years") + ylab("Number of search for (dolar)")+ ggtitle("Boxplot for Dolar Search")+
   theme(legend.position = "none")
 
 ggplot(EVDS,aes(x=factor(year(Tarih)),y=TP.DK.USD.A.EF.YTL))+ geom_boxplot(aes(fill=factor(year(Tarih))))+ 
