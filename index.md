@@ -13,6 +13,8 @@
 
 [here](Homework1\Homework1.html) is the HTML file for First Homework
 
+[here](Homework1\Homework1.r) is the R Script for First Homework
+
 ### Class Github Page
 
 [IE 360](https://github.com/BU-IE-360)

@@ -24,16 +24,18 @@ EVDS$month_year <-format(EVDS$Tarih,'%Y-%m')
 str(EVDS)
 ggplot(EVDS,aes(x=Week,y=TP.DK.USD.A.EF.YTL))+ geom_bar(stat='identity')+
   facet_wrap(~year(Tarih))+
-  xlab("Date") + ylab("Exhange Rate")+ ggtitle("Dollar Exchange Rate vs Time")
+  xlab("Years") + ylab("Dollar Exhange Rate")+ ggtitle("Dollar Exchange Rates in 2016-2020")+
+  
 ###############################
 unemployement_df=read.csv("unemployement.csv", stringsAsFactors = FALSE) 
+unemployement_df <- unemployement_df[-c(157, 158), ]
 summary(unemployement_df)
 str(unemployement_df)
 unemployement_df$Tarih=as.Date(as.yearmon(unemployement_df$Tarih))
 names(unemployement_df)
 ggplot(unemployement_df,aes(x=month(Tarih),y=issizlik))+ geom_bar(stat='identity')+ 
   facet_wrap(~year(Tarih))+
-  xlab("Years") + ylab("Percentage of Unemployement ")+ ggtitle("Unemployement in Turkey vs Time")
+  xlab("Years") + ylab("Percentage of Unemployement ")+ ggtitle("Unemployement Rate in Turkey in 2006-2018")
 ###############################
 covid_df=read.csv("covid19-Turkey.csv")
 summary(covid_df)
