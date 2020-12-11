@@ -14256,10 +14256,10 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">xlsx</span><span class="p">)</span>
@@ -14273,72 +14273,6 @@ a.anchor-link {
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Warning message:
-&#34;package &#39;ggplot2&#39; was built under R version 3.6.3&#34;Warning message:
-&#34;package &#39;dplyr&#39; was built under R version 3.6.3&#34;
-Attaching package: &#39;dplyr&#39;
-
-The following objects are masked from &#39;package:stats&#39;:
-
-    filter, lag
-
-The following objects are masked from &#39;package:base&#39;:
-
-    intersect, setdiff, setequal, union
-
-
-Attaching package: &#39;zoo&#39;
-
-The following objects are masked from &#39;package:base&#39;:
-
-    as.Date, as.Date.numeric
-
-Registered S3 method overwritten by &#39;xts&#39;:
-  method     from
-  as.zoo.xts zoo 
-
-Attaching package: &#39;xts&#39;
-
-The following objects are masked from &#39;package:dplyr&#39;:
-
-    first, last
-
-Warning message:
-&#34;package &#39;forecast&#39; was built under R version 3.6.2&#34;Registered S3 method overwritten by &#39;quantmod&#39;:
-  method            from
-  as.zoo.data.frame zoo 
-Warning message:
-&#34;package &#39;fma&#39; was built under R version 3.6.2&#34;Warning message:
-&#34;package &#39;GGally&#39; was built under R version 3.6.3&#34;Registered S3 method overwritten by &#39;GGally&#39;:
-  method from   
-  +.gg   ggplot2
-
-Attaching package: &#39;GGally&#39;
-
-The following object is masked from &#39;package:fma&#39;:
-
-    pigs
-
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14365,7 +14299,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">price_index</span><span class="o">=</span><span class="nf">read.xlsx</span><span class="p">(</span><span class="s">&quot;Price Index.xlsx&quot;</span><span class="p">,</span><span class="n">sheetIndex</span><span class="o">=</span><span class="m">1</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
@@ -14405,7 +14339,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">property_price_index</span><span class="o">=</span><span class="nf">read.xlsx</span><span class="p">(</span><span class="s">&quot;Residential Property Price Index.xlsx&quot;</span><span class="p">,</span><span class="n">sheetIndex</span><span class="o">=</span><span class="m">1</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
@@ -14445,7 +14379,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">dollar_exchange_rate</span><span class="o">=</span><span class="nf">read.xlsx</span><span class="p">(</span><span class="s">&quot;Dolar Exchange Rate.xlsx&quot;</span><span class="p">,</span><span class="n">sheetIndex</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
@@ -14490,7 +14424,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">sub_df</span><span class="o">&lt;-</span><span class="nf">merge</span><span class="p">(</span><span class="n">price_index</span><span class="p">,</span><span class="n">property_price_index</span><span class="p">,</span><span class="n">by</span><span class="o">=</span><span class="s">&quot;Tarih&quot;</span><span class="p">)</span>
@@ -14510,7 +14444,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df_ts</span> <span class="o">&lt;-</span> <span class="nf">xts</span><span class="p">(</span><span class="n">df</span><span class="p">[,</span><span class="m">-1</span><span class="p">],</span> <span class="n">order.by</span><span class="o">=</span><span class="nf">as.Date</span><span class="p">(</span><span class="n">df</span><span class="p">[,</span><span class="m">1</span><span class="p">],</span> <span class="s">&quot;%Y/%m/%d&quot;</span><span class="p">))</span>
@@ -14553,7 +14487,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">colnames</span><span class="p">(</span><span class="n">df_ts</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="o">&lt;-</span><span class="s">&quot;producer_price_index&quot;</span>
@@ -14579,7 +14513,7 @@ The following object is masked from &#39;package:fma&#39;:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">autoplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;producer_price_index&quot;</span><span class="p">)])</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Time vs Producer Price Index (01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -14837,7 +14771,7 @@ UVSEQiSKilCIRFERCpEoKkL9H2WpsnlrQVjkAAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">autoplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;prop_price_index&quot;</span><span class="p">)])</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Time vs Property Price Index (01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -15103,7 +15037,7 @@ ydfEHfOqhXAAAAAASUVORK5CYII="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">autoplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;dollar_rate&quot;</span><span class="p">)])</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Time vs Dollar Index(01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -15373,7 +15307,7 @@ gCASIQGCSIQEyP+4AlScunSc2wAAAABJRU5ErkJggg=="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">indexes</span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Producer Price Index&quot;</span><span class="p">,</span><span class="s">&quot;Property Price Index&quot;</span><span class="p">,</span> <span class="s">&quot;Dollar Exchange Rate&quot;</span> <span class="p">)</span>
@@ -15618,7 +15552,7 @@ EqCAIAEKCBKggCABCggSoIAgAQoIEqCAIAEKCBKggCABCggSoIAgAQoIEqCAIAEKCBKg4A87
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">df_ts</span><span class="o">$</span><span class="n">producer_price_index_index_normalized</span><span class="o">=</span><span class="p">(</span><span class="n">df_ts</span><span class="o">$</span><span class="n">producer_price_index</span><span class="o">-</span><span class="nf">min</span><span class="p">(</span><span class="n">df_ts</span><span class="o">$</span><span class="n">producer_price_index</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="nf">max</span><span class="p">(</span><span class="n">df_ts</span><span class="o">$</span><span class="n">producer_price_index</span><span class="p">)</span><span class="o">-</span><span class="nf">min</span><span class="p">(</span><span class="n">df_ts</span><span class="o">$</span><span class="n">producer_price_index</span><span class="p">))</span>
@@ -15634,7 +15568,7 @@ EqCAIAEKCBKggCABCggSoIAgAQoIEqCAIAEKCBKggCABCggSoIAgAQoIEqCAIAEKCBKg4A87
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">cols</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Dollar Exchange Rate&quot;</span> <span class="o">=</span> <span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;Producer Price Index&quot;</span> <span class="o">=</span> <span class="s">&quot;yellow&quot;</span><span class="p">,</span> <span class="s">&quot;Residency Price Index&quot;</span> <span class="o">=</span> <span class="s">&quot;blue&quot;</span><span class="p">)</span>
@@ -15981,7 +15915,7 @@ EIQhEAlBGAKREIQhEAlBGAKREIQh/wcEbeHMKmB9kAAAAABJRU5ErkJggg=="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">producer_price_index</span><span class="p">))</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Density of Producer Price Index (01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -16200,7 +16134,7 @@ CEAkAAH/DySnNodcIYHyAAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">prop_price_index</span><span class="p">))</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Density of Residency Price Index(01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -16425,7 +16359,7 @@ ow5CAhCAkAAEICQAAQgJQABCAhCAkAAEICQAAQgJQID/A4Xyvy0xxcJQAAAAAElFTkSuQmCC
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">df_ts</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">dollar_rate</span><span class="p">))</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Density of Dollar Index(01/2017 to 08/2020)&quot;</span><span class="p">)</span><span class="o">+</span>
@@ -16655,7 +16589,7 @@ IBKAAIgEIAAiAQjwf54BI6iJ9ppNAAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
@@ -17032,7 +16966,7 @@ AgEkBBEIICGIQAAJQQQCSAgiEEBCEIEAEoII5P8D+HzWvGkyjgEAAAAASUVORK5CYII="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">corrplot</span><span class="p">)</span>
@@ -17239,7 +17173,7 @@ hAQEICQgACEBAQgJCEBIQABCAgIQEhCAkIAAhAQEICQgACEBAQgJCEBIQABCAgL8F9w9ts39
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">M</span><span class="o">&lt;-</span><span class="nf">cor</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">df_ts_req</span><span class="p">))</span>
@@ -17597,7 +17531,7 @@ AAAASUVORK5CYII="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">cor</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">df_ts_req</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;pearson&quot;</span><span class="p">)</span>
@@ -17652,7 +17586,7 @@ AAAASUVORK5CYII="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggpairs</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">df_ts_req</span><span class="p">))</span>
