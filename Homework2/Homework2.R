@@ -39,7 +39,7 @@ autoplot(df_ts[,c("prop_price_index")])+ggtitle("Time vs Property Price Index (0
 autoplot(df_ts[,c("dollar_rate")])+ggtitle("Time vs Dollar Index(01/2017 to 08/2020)")+
   ylab("Dollar Currency Rate")+xlab("Date (Monthly)")#+geom_smooth()
 
-indexes<-c("Producer Price Index","Property Price Index", "Dollar Index" )
+indexes<-c("Producer Price Index","Property Price Index", "Dollar Exchange Rate" )
 plot(zoo(df_ts), main="General comparsion of Indexes ", xlab="Date (monthly)",ylab=indexes)
 
 df_ts$producer_price_index_index_normalized=(df_ts$producer_price_index-min(df_ts$producer_price_index))/(max(df_ts$producer_price_index)-min(df_ts$producer_price_index))
@@ -75,14 +75,14 @@ ggplot() +
   geom_density(aes(producer_price_index_index_normalized , fill = "Producer Price Index"), alpha = .2, data = df_ts) +
   geom_density(aes(prop_price_index_normalized  , fill = "Residency Price Index"), , alpha = .2, data = df_ts) +
   geom_density(aes(dollar_rate_normalized  , fill = "Dollar Currency Rate"), , alpha = .2, data = df_ts) +  
-  scale_fill_manual(name = "Indexes", values = c("Producer Price Index" = "red", "Residency Price Index" = "green", "Dollar Index"="blue"))+
+  scale_fill_manual(name = "Indexes", values = c("Producer Price Index" = "red", "Residency Price Index" = "green", "Dollar Currency Rate"="blue"))+
   labs(title = "Density Comparison for Normalized Values", x="Normalized Values for Datasets", y="Density")+ 
     theme(
     legend.position = c(.95, .95),
     legend.justification = c("right", "top"),
     legend.box.just = "right",
     legend.margin = margin(6, 6, 6, 6)
-    )#+ scale_fill_discrete(breaks=c("Dollar Index","Residency Price Index","Producer Price Index"))
+    )
 
 library(corrplot)
 df_ts_req=df_ts[,c(2,3,4)]
