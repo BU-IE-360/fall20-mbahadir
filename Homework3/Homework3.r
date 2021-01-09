@@ -147,7 +147,8 @@ results_dt=data.table(Date=test$index,
                   pred_price_index=pred)
 
 ggplot(results_dt,aes(x=Date,y=act_price_index))+geom_line()+
-    geom_point(aes(y=pred_price_index))+ggtitle("Predicted and Actual Price Index Comparison for Test Datasets")+ylab("Price Index")
+    geom_point(aes(y=pred_price_index))+ggtitle("Predicted and Actual Price Index Comparison for Test Datasets")+ylab("Price Index")+
+    xlab("Date (Monthly)")
 
 SSE=sum((pred-test$price_index)^2)
 SST=sum((test$price_index-mean(test$price_index))^2)

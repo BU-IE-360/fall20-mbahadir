@@ -14259,7 +14259,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">xlsx</span><span class="p">)</span>
@@ -14284,14 +14284,14 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>By considering my Student ID, I must to predict Consumer Price Index(2003=100)(TURKSAT). For this dataset, data is available up to 2003. Indeed, this sitution enable us to create a model with big dataset, but it is also a restriction for selecting independent variables for training a model. Reason behind this fact caused from limited datasets in the EVDS, namely there are  few datasets(monthly) existing up to 2003. However, model includes all the data related to Consumer Price Index, and independent variables are selected by considering the availability of datasets.</p>
-<p>First of all, which parameters are selected must be given to explain the reasons for selection. Dollar exchange rate(TP.DK.USD.A.YTL), Interest Rate(TP.KTF10), and Gold Reserve of the central bank(TP.AB.C2) are selected for analysis. By knowing the importance of the dollar index for all operations, dollar index is the first index is set. In addition, all the processes are done with dollar. This fact can be observed at <a href="https://www.mashvisor.com/blog/exchange-rates-affect-real-estate/"> the new</a> . Second Index is Interest Rate, and a lot of business depends their operations to interest rate, which makes interest rate to a possible good independent variable to predict price index. This relevance also mentioned at <a href="https://www.mashvisor.com/blog/exchange-rates-affect-real-estate/"> the new</a>. And the last index is gold reverse. Gold Reserve is a good indicator for deciding policies for governments. Namely, by adding gold reserve level, model can explain small flactuations in the price index rather than predicting general trend. How gold reserve is related to government policy can be obtained by <a href="https://www.um.edu.mo/fba/irer/papers/current/vol18n2_pdf/03.pdf"> the article</a>.</p>
+<p>By considering my Student ID, I must predict the Consumer Price Index(2003=100)(TURKSAT). For this dataset, data is available up to 2003. Indeed, this situation enables us to create a model with the big dataset, but it is also a restriction for selecting independent variables for training a model. The reason behind this fact caused by limited datasets in the EVDS, namely there are few datasets(monthly) existing up to 2003. However, the model includes all the data related to the Consumer Price Index, and independent variables are selected by considering the availability of datasets.</p>
+<p>First of all, which parameters are selected must be given to explain the reasons for selection. Dollar exchange rate(TP.DK.USD.A.YTL), Interest Rate(TP.KTF10), and Gold Reserve of the central bank(TP.AB.C2) are selected for analysis. By knowing the importance of the dollar index for all operations, the dollar index is the first index is set. In addition, all the processes are done with dollar. This fact can be observed at <a href="https://www.financemagnates.com/trading-room/education-centre/how-inflation-correlates-with-the-us-dollar-index/"> the new</a> . Second Index is Interest Rate, and a lot of business depends on their operations to interest rate, which makes interest rate to a possible good independent variable to predict price index. This relevance also mentioned at <a href="https://www.investopedia.com/ask/answers/12/inflation-interest-rate-relationship.asp"> the new</a>. And the last index is the gold reverse. Gold Reserve is a good indicator for deciding policies for governments. Namely, by adding the gold reserve level, the model can explain small fluctuations in the price index rather than predicting the general trend. How the gold reserve is related to government policy can be obtained by <a href="https://www.fxempire.com/education/article/countrys-gold-reserve-affect-economy-396969"> the new</a>.</p>
 <p>Namely, all the datasets for prediction are relevant to the target variable somehow. Main aim of homework is to create a model to predict feature Price Index. And before creating the model, relevancy of the indexes will be approved by visualization and finding correlations. After that, a model will be created and evaluated by looking fundamental paramaters. In other words, our first aim to find out relevancy of research question which can be listed as:</p>
 <ul>
-<li>Is there any natural relation ship between the Dollar Currency Rate and Producer Price Index, Residential Property Price Index?</li>
-<li>Is Residential Property Price Index vulnerable to Dollar Currency Rate and Producer Price Index?</li>
-<li>A lot of things in production is dependent to raw material. Does it cause a strong relation between the Dollar Currency Rate and Producer Price Index?</li>
-<li>Residential Property Price Index is one of the result for cost of production. So, is there any relavence between the Residential Property Price Index and Producer Price Index?</li>
+<li>Is there any natural relationship between the Dollar Currency Rate and Price Index?</li>
+<li>A lot of things in production is dependent on the raw material. Does it cause a strong relation between the Dollar Currency Rate and Price Index?</li>
+<li>Interest rate is one of the key factors for determined the production volume of countries. In addition, it can affect the behavior of people and manufacturers. Namely, the interest rate has multiple perspectives. So, is there any relation between the price index and interest rate?</li>
+<li>Gold Reserve a good indicator of how governments make policy. Namely, the policy must be in harmony with the gold reserve in the central bank. So, do these policies have an impact on the revealed price index in Turkey?</li>
 <li>Are all the founded resources mentioned in the introduction valid for Turkey?</li>
 </ul>
 <p>After achieved first aim, second aim is to create a model without over-fitting or biased. After achieved these 2 goals, Consumer Price Index at 2020-12 will be predicted and compared with the actual value.</p>
@@ -15526,7 +15526,7 @@ qZRcjVTuEosAAAAASUVORK5CYII="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Price Index is target aim for this homework. Both Dollar Index and Price Index have an increase trend, so dollar index can be a good independent variable to explain trend in price index. On the other hand, it is hard to say any trend in gold reserve and interest rate, but still these index can be impact on price index by considering found articles and news assocaited with connection between the indexes. Namely, other index may enable model to explain flactuations in the price index. This flatuations can be observed more easily in the next visualizations.</p>
+<p>Price Index is the target aim for this homework. Both the Dollar Index and Price Index have an increasing trend, so the dollar index can be a good independent variable to explain the trend in the price index. On the other hand, it is hard to say any trend in gold reserve and interest rate, but still, this index can impact on price index by considering found articles and news associated with a connection between the indexes. Namely, other indexes may enable the model to explain fluctuations in the price index. These fluctuations can be observed more easily in the next visualizations.</p>
 
 </div>
 </div>
@@ -16228,7 +16228,7 @@ FEEACYIi6P/86cwt4EdQ8wAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In general, by looking all the line plots, it can be said that there are similarities between the price index and dollar rate and some similarities in terms of flactuations. This situation is a one of the good indicator for thinking there is a relevancy between the determined parameters.</p>
+<p>In general, by looking at all the line plots, it can be said that there are similarities between the price index and dollar rate and some similarities in terms of fluctuations. This situation is one of the good indicators for thinking there is relevancy between the determined parameters.</p>
 
 </div>
 </div>
@@ -17159,7 +17159,7 @@ JElKIIEkSQkkkCQpgQSSJCWQQJKkBBJIkpRA/w8eSVSnJzhRRAAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One of the other possible visualization techniques for analyzing data is the density plot. However, the density plot cannot be enough indicator for concluding any decision. There is a similarity between Dollar Currency Rate and Price Index in terms of shape of density plot. In addition, density values for each datasets are varied because of diffence in the range of datasets.</p>
+<p>One of the other possible visualization techniques for analyzing data is the density plot. However, the density plot cannot be enough indicator for concluding any decision. There is a similarity between the Dollar Currency Rate and Price Index in terms of the shape of the density plot. In addition, density values for each dataset are varied because of difference in the range of datasets.</p>
 
 </div>
 </div>
@@ -17526,7 +17526,7 @@ AABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In order to solve the difference in values of density for each dataset, normalized values can be used. By doing that, all the density plots can be drawn at the same plot and this plot enables us to observe the shape of density plots more detailly. Again, the similarity between Dollar Currency Rate and Price Index in terms of shape of density plot is achieved in this plot.</p>
+<p>In order to solve the difference in values of density for each dataset, normalized values can be used. By doing that, all the density plots can be drawn at the same plot and this plot enables us to observe the shape of density plots in more detailly. Again, the similarity between Dollar Currency Rate and Price Index in terms of the shape of density plot is achieved in this plot.</p>
 
 </div>
 </div>
@@ -17761,7 +17761,7 @@ kIAAhAQEICQgACEBAQgJCEBIQABCAgIQEhCAkIAA/w//R0fH+eJtMAAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Much as it can be said that there is a high correlation between the some determined values, it is hard to find exact correlation values by just looking at the color scale.</p>
+<p>Much as it can be said that there is a high correlation between some determined values, it is hard to find exact correlation values by just looking at the color scale.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -18152,13 +18152,13 @@ iBB2AAARwg4AIELYAQBECDsAgAhhBwAQIewAACI+AakoeGYo+4HLAAAAAElFTkSuQmCC"
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Exact correlation values are achieved in this analysis, and 0.96 can be counted as a high correlation in "pearson" correlation analysis. So, Price Index and Dollar Rate have high correlation by knowing that 1 represents the highest correlation. As mentioned before, Interest Rate and Golde Reserve don't have a high correlation because of there is absolute trend in these datasets. However, 0.3 is a good value to understand fluctuation in the target value, which will be evaluated in the phase of creating the model.</p>
+<p>Exact correlation values are achieved in this analysis, and 0.96 can be counted as a high correlation in "pearson" correlation analysis. So, Price Index and Dollar Rate have a high correlation by knowing that 1 represents the highest correlation. As mentioned before, Interest Rate and Golde Reserve don't have a high correlation because there is an absolute trend in these datasets. However, 0.3 is a good value to understand fluctuation in the target value, which will be evaluated in the phase of creating the model.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">cor</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">df_ts</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;pearson&quot;</span><span class="p">)</span>
@@ -18214,7 +18214,7 @@ iBB2AAARwg4AIELYAQBECDsAgAhhBwAQIewAACI+AakoeGYo+4HLAAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggpairs</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">df_ts</span><span class="p">))</span>
@@ -18608,7 +18608,7 @@ UhBAgiAFASQIUhBAgiAF/Qd4KyKaLgmE7gAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Model">Model<a class="anchor-link" href="#Model">&#182;</a></h1>
+<h1 id="7.-Model">7. Model<a class="anchor-link" href="#7.-Model">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -18627,13 +18627,13 @@ UhBAgiAFASQIUhBAgiAF/Qd4KyKaLgmE7gAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Because of limited dataset, model can have overfitting in the determined values. In order to overcome this issue(at least check the over-fitting), dataset can be divided 2 different datasets. One of them will be train dataset which can be used for creating the model. After that, model can predict the target values in the test dataset. This predictions will be evaluated by different perspective to obtain accuracy of model. Indeed, subsetting can be made in different ways, but our aim is to predict price index in recent time period. So, train set includes data before 2018 and the test data includes the rest. Main applied rule for size of datasets is that 80% of the data allocated for training datasets. And the rest assigned as test dataset.</p>
+<p>Because of the limited dataset, the model can have overfitting in the determined values. In order to overcome this issue(at least check the over-fitting), the dataset can be divided into 2 different datasets. One of them will be a training dataset that can be used for creating the model. After that, the model can predict the target values in the test dataset. These predictions will be evaluated from different perspectives to obtain the accuracy of the model. Indeed, subsetting can be made in different ways, but our aim is to predict the price index in the recent time period. So, the train set includes data before 2018 and the test data includes the rest. The main applied rule for the size of datasets is that 80% of the data allocated for training datasets. And the rest assigned as test dataset.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">train</span><span class="o">=</span><span class="nf">subset</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span><span class="n">index</span><span class="o">&lt;</span><span class="s">&quot;2018-01-01&quot;</span><span class="p">)</span>
@@ -18648,12 +18648,12 @@ UhBAgiAFASQIUhBAgiAF/Qd4KyKaLgmE7gAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="First-Model-(with-determined-independent-variables)">First Model (with determined independent variables)<a class="anchor-link" href="#First-Model-(with-determined-independent-variables)">&#182;</a></h2>
+<h2 id="a.-First-Model-(with-determined-independent-variables)">a. First Model (with determined independent variables)<a class="anchor-link" href="#a.-First-Model-(with-determined-independent-variables)">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">fit</span><span class="o">&lt;-</span> <span class="nf">lm</span><span class="p">(</span><span class="n">price_index</span><span class="o">~</span><span class="n">dollar_rate</span><span class="o">+</span><span class="n">interest_rate</span><span class="o">+</span><span class="n">gold_reserve</span><span class="p">,</span><span class="n">train</span><span class="p">)</span>
@@ -18712,13 +18712,13 @@ F-statistic:  3072 on 3 and 176 DF,  p-value: &lt; 2.2e-16
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In general, model has a good R-squared value and all the determined indipendent variables are significant(except Intercept that is not a determined variable). Much as model's R-squared value is a good indicator for model, target price has a trend so good R-squared value cannot be enough parameter for evaluating the model. So, Residual standard error shows some defects of the model. In order to obtain more information related to residuals of the model, checkresiduals can be used.</p>
+<p>In general, the model has a good R-squared value and all the determined independent variables are significant(except Intercept that is not a determined variable). Much as the model's R-squared value is a good indicator for the model, target price has a trend so a good R-squared value cannot be enough parameter for evaluating the model. So, the Residual standard error shows some defects of the model. In order to obtain more information related to the residuals of the model, checkresiduals can be used.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">checkresiduals</span><span class="p">(</span><span class="n">fit</span><span class="p">)</span>
@@ -19018,13 +19018,13 @@ gISQgAAJIQEBEkICAiSEBARICAkIkBASECAhJKD/AxBON1AFA4u1AAAAAElFTkSuQmCC"
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It can be said that, resiuals distribution resembles to normal by looking the count plot. In addition mean of residuals is close to zero, which is also a desired feature for model's residuals. There is a 2 problem, one of them is that there is autocorrelation between the residuals(LM test = 137.87, df = 10, p-value &lt; 2.2e-16), especially for lag 1 and lag 12(compared to sequential lags). So, Lag 1 and Lag 12 can be good indipendent variable for predicting the price index(target value). The other problem is non-stationary variance in the residuals. But this problem must be checked again in new model after added determined new indipendent features.</p>
+<p>It can be said that residuals distribution resembles normal by looking at the count plot. In addition, the mean of residuals is close to zero, which is also a desired feature for the model's residuals. There is a 2 problem, one of them is that there is autocorrelation between the residuals(LM test = 137.87, df = 10, p-value &lt; 2.2e-16), especially for lag 1 and lag 12(compared to sequential lags). So, Lag 1 and Lag 12 can be good independent variables for predicting the price index(target value). The other problem is non-stationary variance in the residuals. But this problem must be checked again in a new model after added determined new independent features.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Second-Model-(with-the-same-parameters-and-lag-2-and-lag-12-of-price-index)">Second Model (with the same parameters and lag 2 and lag 12 of price index)<a class="anchor-link" href="#Second-Model-(with-the-same-parameters-and-lag-2-and-lag-12-of-price-index)">&#182;</a></h2>
+<h2 id="b.-Second-Model-(with-the-same-parameters-and-lag-2-and-lag-12-of-price-index)">b. Second Model (with the same parameters and lag 2 and lag 12 of price index)<a class="anchor-link" href="#b.-Second-Model-(with-the-same-parameters-and-lag-2-and-lag-12-of-price-index)">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -19034,7 +19034,7 @@ gISQgAAJIQEBEkICAiSEBARICAkIkBASECAhJKD/AxBON1AFA4u1AAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">dt</span><span class="p">[,</span><span class="n">lag1</span><span class="o">:=</span><span class="nf">shift</span><span class="p">(</span><span class="n">price_index</span><span class="p">,</span><span class="n">type</span><span class="o">=</span><span class="s">&quot;lag&quot;</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="m">1</span><span class="p">)]</span>
@@ -19054,7 +19054,7 @@ gISQgAAJIQEBEkICAiSEBARICAkIkBASECAhJKD/AxBON1AFA4u1AAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">train</span><span class="o">=</span><span class="nf">subset</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span><span class="n">index</span><span class="o">&lt;</span><span class="s">&quot;2018-01-01&quot;</span><span class="p">)</span>
@@ -19074,7 +19074,7 @@ gISQgAAJIQEBEkICAiSEBARICAkIkBASECAhJKD/AxBON1AFA4u1AAAAAElFTkSuQmCC"
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">fit1</span><span class="o">&lt;-</span> <span class="nf">lm</span><span class="p">(</span><span class="n">price_index</span><span class="o">~</span><span class="n">dollar_rate</span><span class="o">+</span><span class="n">interest_rate</span><span class="o">+</span><span class="n">lag1</span><span class="o">+</span><span class="n">lag12</span><span class="o">+</span><span class="n">gold_reserve</span><span class="p">,</span><span class="n">train</span><span class="p">)</span>
@@ -19136,13 +19136,13 @@ F-statistic: 1.232e+04 on 5 and 162 DF,  p-value: &lt; 2.2e-16
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In new model, adjusted R-squared value is improved. However, 0.9973 can be a indicator for a over-fitting in the training dataset, but model will also be evaluated in test dataset. So, over-fitting situation will be considered in the nex section of the Homework. In addition, the biggest improve is achieved in the Residual standard value's of the model. Namely, Residual standard error decreased from 10.59 to 3.888. In addition, Min and Max value in the model for residuals are also decreased nearly to 30% of the previous model. In general, there is an improvement in the model for prediction at least for training dataset. Also, interest rate became insignificant for new model, but a different model trained without interest rate and checked in different perspectives. At the end, interest rate is a important role especially for huge differences in the future time period, which can be approved by looking the p value of the parameter. P value is too close to 0.1 and this situation enable us to keep this parameter in the model. Again, residual must be evaluated by using checkresidual function.</p>
+<p>In the new model, the adjusted R-squared value is improved. However, 0.9973 can be an indicator of over-fitting in the training dataset, but the model will also be evaluated in the test dataset. So, the over-fitting situation will be considered in the next section of the Homework. In addition, the biggest improvement is achieved in the Residual standard values of the model. Namely, Residual standard error decreased from 10.59 to 3.888. In addition, Min and Max value in the model for residuals is also decreased nearly to 30% of the previous model. In general, there is an improvement in the model for prediction at least for the training dataset. Also, the interest rate became insignificant for the new model, but a different model trained without interest rate and checked in different perspectives. In the end, the interest rate is an important role especially for huge differences in the future time period, which can be approved by looking at the p-value of the parameter. P-value is too close to 0.1 and this situation enables us to keep this parameter in the model. Again, residual must be evaluated by using checkresidual function.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">checkresiduals</span><span class="p">(</span><span class="n">fit1</span><span class="p">)</span>
@@ -19463,25 +19463,25 @@ AABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Again, distribution of residual resembles to normal distribution, which is a good indicator for the new model. In addition, Autocorrelation decreased a lot after adding the lagged values. Still there is autocorrelation between the residuals but it is much less than previous model's residuals. This fact can be obtained by looking Breusch-Godfrey test of these 2 model. There is a huge improvement in terms of autocorrelation. Lastly, residuals plot has 2 important information. The first one is that mean of the residuals is close to zero, which is desired feature for model. The second one is constant variance in the residuals. In this perspective, it is hard to say that there is a stationarity in the variance of residuals. Nevertheless, the variance didn't differentiate too much. So, model can be assumed as acceptable for future predictions.</p>
-<p>Lastly, month information doesn't seem reqired for the model. Nevertheless, month information is added a different model as factor information. All the check processes applied to this new model. However, there is no improvement in the model what achieved. But also, this new independent variables can cause an over-fitting by considering the input size of the model. Namely, 11 new features aren't reasonable to add to model, and all the execuations are removed to homework to make it more clear and understandable.</p>
+<p>Again, the distribution of residual resembles a normal distribution, which is a good indicator for the new model. In addition, Autocorrelation decreased a lot after adding lagged values. Still, there is autocorrelation between the residuals but it is much less than the previous model's residuals. This fact can be obtained by looking Breusch-Godfrey test of these 2 models. There is a huge improvement in terms of autocorrelation. Moreover, autocorrelation controlled with different order up values. All of them smaller than the previous model, so it can be said that there is an improvement in terms of autocorrelation. Lastly, the residuals plot has 2 important pieces of information. The first one is that mean of the residuals is close to zero, which is the desired feature for the model. The second one is constant variance in the residuals. In this perspective, it is hard to say that there is stationarity in the variance of residuals. Nevertheless, the variance didn't differentiate too much. So, the model can be assumed as acceptable for future predictions.</p>
+<p>Lastly, month information doesn't seem required for the model. Nevertheless, month information is added to a different model as factor information. All the check processes applied to this new model. However, there is no improvement in the model achieved. But also, these new independent variables can cause an over-fitting by considering the input size of the model. Namely, 11 new features aren't reasonable to add to the model, and all the executions are removed to homework to make it more clear and understandable.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Residual-Analysis-with-Independent-Variable">Residual Analysis with Independent Variable<a class="anchor-link" href="#Residual-Analysis-with-Independent-Variable">&#182;</a></h2>
+<h2 id="c.-Residual-Analysis-with-Independent-Variable">c. Residual Analysis with Independent Variable<a class="anchor-link" href="#c.-Residual-Analysis-with-Independent-Variable">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Alternative way to checkresiduals() is to plot residuals with independent variables, which enable us to get insight information related to relation in between the indipendent variables and errors in the predictions. By looking the plots, some improvements can be added to model or indipendent variables can be modified to make it proper for new model.</p>
+<p>An alternative way to checkresiduals() is to plot residuals with independent variables, which enables us to get insight information related to relationships between the independent variables and errors in the predictions. By looking at the plots, some improvements can be added to the model or independent variables can be modified to make it proper for the new model.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">13</span><span class="o">:</span><span class="n">.N</span><span class="p">)][,</span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;Price Index&quot;</span><span class="o">=</span><span class="n">price_index</span><span class="p">,</span><span class="n">residual</span><span class="o">=</span><span class="n">fit1</span><span class="o">$</span><span class="n">residual</span><span class="p">)])</span>
@@ -20628,12 +20628,12 @@ pgAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Prediction-with-Determined-Model">Prediction with Determined Model<a class="anchor-link" href="#Prediction-with-Determined-Model">&#182;</a></h1>
+<h1 id="8.-Prediction-with-Determined-Model">8. Prediction with Determined Model<a class="anchor-link" href="#8.-Prediction-with-Determined-Model">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">pred</span><span class="o">=</span><span class="nf">predict</span><span class="p">(</span><span class="n">fit1</span><span class="p">,</span> <span class="n">newdata</span><span class="o">=</span><span class="n">test</span><span class="p">)</span>
@@ -20647,12 +20647,12 @@ pgAAAABJRU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Comparison-of-actual-and-predicted-values-(Visually)">Comparison of actual and predicted values (Visually)<a class="anchor-link" href="#Comparison-of-actual-and-predicted-values-(Visually)">&#182;</a></h3>
+<h3 id="a.-Comparison-of-actual-and-predicted-values-(Visually)">a. Comparison of actual and predicted values (Visually)<a class="anchor-link" href="#a.-Comparison-of-actual-and-predicted-values-(Visually)">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">results_dt</span><span class="o">=</span><span class="nf">data.table</span><span class="p">(</span><span class="n">Date</span><span class="o">=</span><span class="n">test</span><span class="o">$</span><span class="n">index</span><span class="p">,</span>
@@ -20668,11 +20668,12 @@ pgAAAABJRU5ErkJggg=="
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">results_dt</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Date</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">act_price_index</span><span class="p">))</span><span class="o">+</span><span class="nf">geom_line</span><span class="p">()</span><span class="o">+</span>
-    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">pred_price_index</span><span class="p">))</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Predicted and Actual Price Index Comparison for Test Datasets&quot;</span><span class="p">)</span><span class="o">+</span><span class="nf">ylab</span><span class="p">(</span><span class="s">&quot;Price Index&quot;</span><span class="p">)</span>
+    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">pred_price_index</span><span class="p">))</span><span class="o">+</span><span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Predicted and Actual Price Index Comparison for Test Datasets&quot;</span><span class="p">)</span><span class="o">+</span><span class="nf">ylab</span><span class="p">(</span><span class="s">&quot;Price Index&quot;</span><span class="p">)</span><span class="o">+</span>
+    <span class="nf">xlab</span><span class="p">(</span><span class="s">&quot;Date (Monthly)&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20696,216 +20697,223 @@ pgAAAABJRU5ErkJggg=="
 <div class="jp-RenderedImage jp-OutputArea-output ">
 <img src="data:image/png;base64,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
-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
-K6vc3PeXyxdEUs4VVW6GG8zJqBeR1HFFlYtIiFQrV1K5+e94mi+IpJwrqNwcHgmpF5HUcQWV
-i0iIVC9XTrlZPBJSLyKp48opF5EQqWKumHLzeCSkXkRSx5VSbiaPhNSLSOq4UspFJESqmiuk
-3FweCakXkdRxhZSLSIhUN1dGudk8ElIvIqnjyigXkRCpcq6IcvN5JKNeRNLHlVBuRo9E1ItI
-CrkSykUkRKqeK6DcnB5JqPcPkRRyBZSLSIhUP7d8uVk9ElBv+wyRtHGLl/vwKP79iee4mYNI
-yrnFy+1/90Q+buYgknJu6XKTfofLDDd3EEk5t3S5iIRIKriFy+3tISESIlXLLVvu4LuQ2EdC
-pFq5ckTiqB0iVcwtWm7eU0gPboEgknIuIpXgIpI6bslyC3gkZPEikjouIpXgIpI6bsFyS3gk
-ZPEikjpuuXKLeCRk8SKSOi4ileAikjpusXLLeCRk8SKSOi4ileAikjpuqXILeSRk8SKSOi4i
-leAikjpuIawz1s2IpJ2LSCW4iKSOi0gluIikjlsG66x1MyJp5yJSCS4iqeMiUgluPJGI6TB8
-bmGNpIRbBOvMdTObdtq5iFSCi0jquIhUgotI6rglsK4Q908MF5HUcRGpBBeR1HERqQQXkdRx
-C2BdIe6fHC4iqeMiUgkuIqnjIlIJLiKp4yJSCS4iqePmx7pC3D9BXERSx0WkElxEUsdFpBJc
-RFLHzY51hbh/kriIpI6LSCW4iKSOi0gluIikjpsbe7ufnbFuRiTtXEQqwUUkdVxEKsFFJHVc
-RCrBRSR13MzY+y2/jXUzImnnIlIJLiKp4yJSCS4iqePmxT6+zMVYNyOSdi4ileAikjouIpXg
-IpI6blas9zV9xroZkbRzEakEF5HUcRGpBBeR1HFzYv0vYDbWzYiknVtIJOcKfa25jMWLSOq4
-ZURyrpRJMhYvIqnjFhHJuWImyVi8iKSOmxE7WCEhEiIp4iJSCS4iqeMWEYl9JETSxs2H7YnD
-UTtE0sUtJJK1bkYk7VxEKsFFJHXcbNjBppyxbkYk7VxEKsFFJHVcRCrBRSR1XEQqwUUkddxc
-2OHRbmPdjEjauYhUgotI6riIVIKLSOq4mbCj6xiMdTMiaeciUgkuIqnjIlIJLiKJ5O65/jNP
-ueM5rLCbI3IRSSLX7TEJkUpwEUkg1/3tWSchUgkuIsnjdmN085/3IFIJLiKJ47rRD1mw6zIx
-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
-RU5ErkJggg=="
+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
+E0TaMrlAeAAAAABJRU5ErkJggg=="
 >
 </div>
 
@@ -20918,18 +20926,24 @@ RU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Line represents the actual value, and points are the predicted values for the Price Index. It can be said that model doesn't react immediately to the flactuations in the price index. But, this also a good feature for being smooth estimator. If size of training dataset was bigger than what have been trained, smoothness can be considered as a defect. However, smoothness can have possitive effect in terms of generalization error.</p>
+<p><strong><em>The line represents the actual value, and points are the predicted values for the Price Index.</em></strong></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Statistical-Information-of-Prediction">Statistical Information of Prediction<a class="anchor-link" href="#Statistical-Information-of-Prediction">&#182;</a></h3>
+<p>It can be said that the model doesn't react immediately to the fluctuations in the price index. But, this also a good feature for being a smooth estimator. If the size of the training dataset was bigger than what has been trained, smoothness can be considered as a defect. However, smoothness can have a positive effect in terms of generalization error.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="b.-Statistical-Information-of-Prediction">b. Statistical Information of Prediction<a class="anchor-link" href="#b.-Statistical-Information-of-Prediction">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">SSE</span><span class="o">=</span><span class="nf">sum</span><span class="p">((</span><span class="n">pred</span><span class="o">-</span><span class="n">test</span><span class="o">$</span><span class="n">price_index</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">)</span>
@@ -20970,18 +20984,18 @@ RU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Statistical results also support the goodness of the model. In general, model can be used for predicting the future value of the Price Index.</p>
+<p>Statistical results also support the goodness of the model. In general, the model can be used for predicting the future value of the Price Index.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Prediction-of-2020-12">Prediction of 2020-12<a class="anchor-link" href="#Prediction-of-2020-12">&#182;</a></h1>
+<h1 id="9.-Prediction-of-2020-12">9. Prediction of 2020-12<a class="anchor-link" href="#9.-Prediction-of-2020-12">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="n">results_dt</span><span class="p">[</span><span class="n">.N</span><span class="p">]</span>
@@ -21023,13 +21037,13 @@ RU5ErkJggg=="
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The last row of the result_dt show model's prediction and actual value for Price Index at 2020-12. The difference between the actual and predicted equals to 13.8507. Indeed, this value is a big value for difference but still it is a good prediction in case of an increase trend in the price index.</p>
+<p>The last row of the result_dt shows model's prediction and actual value for the Price Index at 2020-12. The difference between the actual and predicted equals 13.8507. Indeed, this value is a big value for the difference but still, it is a good prediction in case of an increasing trend in the price index.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="7.-Conclusion">7. Conclusion<a class="anchor-link" href="#7.-Conclusion">&#182;</a></h1>
+<h1 id="10.-Conclusion">10. Conclusion<a class="anchor-link" href="#10.-Conclusion">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -21038,18 +21052,17 @@ RU5ErkJggg=="
 <ul>
 <li>Resources mentioned in the intrıduction part is also valid for Turkey.</li>
 <li>There are relevancy between the researched parameters.</li>
-<li>Relevancy betweem the parameters are not only existing for increase trend but also for flactuations in values of indexes. </li>
-<li>There are some similarities in the density plots of indexes. All the datasets have 2 different peaks in the value ranges.</li>
-<li>All the datasets highly correlated.</li>
+<li>Relevance between the parameters are not existing for an increasing trend for all independent variables. But for explaining fluctuations in values of the price index, all of them have an important role.</li>
+<li>All the datasets are somehow correlated.</li>
 </ul>
-<p>After approved the relevancy of the datasets in somehow, a model created by just adding the independent variable what determined. In this model, there was a relevancy between the residuals. This information obtained in 2 different tool, acf and Breusch-Godfrey are the these 2 tools. In order to decrease these autocorrelation in the residuals, lag 1 and lag 12 value of price index added to model. Why month information didn't be added to model avoid to over-fitting situation occuring the limited size of training datasets. After added these 2 features, R-squared value became higher and residual error decreased. But also, autocorrelation in the residuals are decreased and other fundamental requirements for linear regression is satisfied.</p>
-<p>Lastly, created model's performens checked with test dataset. All the possible check tools gave good results related to model. 2020-12 was predicted by determined model and compared to actual price index. There is 13.8507 difference in the actual and predicted value. However, this situation is caused from the smoothness in the predictions of the model, which is desired feature in the limited size of training datasets, and price index must have been affected with corona virus situation. Values related to corona virus cannot be added to model because it emerged in the last year and doesn't improve model.</p>
+<p>After approved the relevancy of the datasets somehow, a model created by just adding the independent variable that determined. In this model, there was relevancy between the residuals. This information obtained in 2 different tools, ACF and Breusch-Godfrey are these 2 tools. In order to decrease these autocorrelations in the residuals, lag 1 and lag 12 value of price index added to the model. Why month information didn't be added to model avoid to over-fitting situation occurring the limited size of training datasets. After added these 2 features, the R-squared value became higher and residual error decreased. But also, autocorrelation in the residuals are decreased and other fundamental requirements for linear regression are satisfied.</p>
+<p>Lastly, the created model's performance checked with the test dataset. All the possible check tools gave good results related to the model. 2020-12 was predicted by the determined model and compared to the actual price index. There is a 13.8507 difference in the actual and predicted value. However, this situation is caused by the smoothness in the predictions of the model, which is a desired feature in the limited size of training datasets, and the price index must have been affected by the corona virus situation. Values related to the corona virus cannot be added to the model because it emerged in the last year and doesn't improve the model.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="8.-References">8. References<a class="anchor-link" href="#8.-References">&#182;</a></h2>
+<h2 id="11.-References">11. References<a class="anchor-link" href="#11.-References">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
