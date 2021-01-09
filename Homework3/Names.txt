@@ -1,0 +1,3 @@
+Interest Rate: TP KTF10
+Exchange Rate: TP DK USD A YTL
+Price Index: TP FG J01
