@@ -32,17 +32,17 @@ colnames(df_ts)[2]<-"interest_rate"
 colnames(df_ts)[4]<-"gold_reserve"
 colnames(df_ts)[3]<-"dollar_rate"
 
-autoplot(df_ts[,c("price_index")])+ggtitle("Time vs Price Index (01/2003 to 12/2020)")+
-  ylab("Price Index")+xlab("Date (Monthly)")
+autoplot(df_ts[,c("price_index")])+ggtitle("Time vs Consumer Price Index (01/2003 to 12/2020)")+
+  ylab("Consumer Price Index")+xlab("Date (Monthly)")
 
-autoplot(df_ts[,c("interest_rate")])+ggtitle("Time vs Interest Rate (01/2003 to 12/2020)")+
-  ylab("Interest Rate")+xlab("Date (Monthly)")
+autoplot(df_ts[,c("interest_rate")])+ggtitle("Time vs Interest Rate(Percentage) (01/2003 to 12/2020)")+
+  ylab("Interest Rate (Percentage)")+xlab("Date (Monthly)")
 
-autoplot(df_ts[,c("gold_reserve")])+ggtitle("Time vs Gold Reserve (01/2003 to 12/2020)")+
-  ylab("Gold Reserve Index")+xlab("Date (Monthly)")
+autoplot(df_ts[,c("gold_reserve")])+ggtitle("Time vs Gold Reserve Index (Million USD)(01/2003 to 12/2020)")+
+  ylab("Gold Reserve Index (Million USD)")+xlab("Date (Monthly)")
 
 autoplot(df_ts[,c("dollar_rate")])+ggtitle("Time vs Dollar Rate (01/2003 to 12/2020)")+
-  ylab("Dollar Rate")+xlab("Date (Monthly)")
+  ylab("Dollar Rate (Dollar/Turkish Lira)")+xlab("Date (Monthly)")
 
 indexes<-c("Price Index","Interest Rate", "Dollar Rate", "Gold Reserve" )
 plot(zoo(df_ts), main="General comparsion of Indexes ", xlab="Date (monthly)",ylab=indexes)
@@ -69,14 +69,14 @@ ggplot(df_ts)+geom_line(aes(x=Index, y=price_index_normalized,color="Price Index
     legend.margin = margin(6, 6, 6, 6)
     )
 
-ggplot(df_ts, aes(price_index))+ggtitle("Density of Price Index (01/2003 to 12/2020)")+
-  ylab("Density")+xlab("Price Index")+geom_density(fill="lightblue")
+ggplot(df_ts, aes(price_index))+ggtitle("Density of Consumer Price Index (01/2003 to 12/2020)")+
+  ylab("Density")+xlab("Consumer Price Index")+geom_density(fill="lightblue")
 
 ggplot(df_ts, aes(interest_rate))+ggtitle("Density of Interest Rate Index (01/2003 to 12/2020)")+
-  ylab("Density")+xlab("Interest Rate Index")+geom_density(fill="lightblue")
+  ylab("Density")+xlab("Interest Rate Index (Percentage)")+geom_density(fill="lightblue")
 
 ggplot(df_ts, aes(gold_reserve))+ggtitle("Density of Gold Reserve (01/2003 to 12/2020)")+
-  ylab("Density")+xlab("Gold Reserve")+geom_density(fill="lightblue")
+  ylab("Density")+xlab("Gold Reserve (Million USD)")+geom_density(fill="lightblue")
 
 ggplot(df_ts, aes(dollar_rate))+ggtitle("Density of Dollar Index (01/2003 to 12/2020)")+
   ylab("Density")+xlab("Dollar Currency Rate")+geom_density(fill="lightblue")
@@ -134,9 +134,9 @@ summary(fit1)
 checkresiduals(fit1)
 
 plot(train[c(13:.N)][,list("Price Index"=price_index,residual=fit1$residual)])
-plot(train[c(13:.N)][,list("Dollar Rate"=dollar_rate ,residual=fit1$residual)])
-plot(train[c(13:.N)][,list("Interest Rate"=interest_rate ,residual=fit1$residual)])
-plot(train[c(13:.N)][,list("Gold Reserve Index"=gold_reserve,residual=fit1$residual)])
+plot(train[c(13:.N)][,list("Dollar Rate (Dollar/Turkish Lira)"=dollar_rate ,residual=fit1$residual)])
+plot(train[c(13:.N)][,list("Interest Rate (Percentage)"=interest_rate ,residual=fit1$residual)])
+plot(train[c(13:.N)][,list("Gold Reserve Index (Million USD)"=gold_reserve,residual=fit1$residual)])
 plot(train[c(13:.N)][,list("Lag 1 value of Price Index"=lag1 ,residual=fit1$residual)])
 plot(train[c(13:.N)][,list("Lag 12 value of Price Index"=lag12,residual=fit1$residual)])
 
