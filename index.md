@@ -27,6 +27,12 @@
 
 [here](Homework3\Homework3.r) is the R Script for Third Homework
 
+## Homework 4
+
+[here](Homework4\Homework4.html) is the HTML file for Fourth Homework
+
+[here](Homework4\Homework4.r) is the R Script for Fourth Homework
+
 ### Class Github Page
 
 [IE 360](https://github.com/BU-IE-360)
