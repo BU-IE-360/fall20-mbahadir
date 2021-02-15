@@ -33,6 +33,13 @@
 
 [here](Homework4\Homework4.r) is the R Script for Fourth Homework
 
+## Project
+
+[here](Project\IE 360 Project Report.html) is the HTML file for Project Report
+
+[here](https://github.com/mbahadir/360project_files) is the GitHub Repository for notebooks and scripts of the project. 
+Details of the codes can be found at the end of the report. 
+
 ### Class Github Page
 
 [IE 360](https://github.com/BU-IE-360)
