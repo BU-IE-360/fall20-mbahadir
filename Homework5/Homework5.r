@@ -110,4 +110,6 @@ anova(final_model)
 hypothesis_test=lm(SALES~ AGE + APT + GPA, data=data_sales)
 summary(hypothesis_test)
 
+anova(final_model,hypothesis_test)
+
 

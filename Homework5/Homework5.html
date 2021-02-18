@@ -17287,6 +17287,7 @@ F-statistic: 23.39 on 2 and 27 DF,  p-value: 1.276e-06
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>F value for new model with APT variable equals to 65, which makes it the new variable for new model. Other models' F values don't exceed the 1.7. In addition, p value for these F values are occured with the value of the value of the F parameter. Namely, by looking the p-value, APT will be selected again because the smallest p-value for regressions achieved by APT variable.</p>
+<p>In addition, by looking the goodness-of-fit test, the best model was achieved by adding the APT variable, so this model can be approved by also looking in this manner.</p>
 
 </div>
 </div>
@@ -17479,6 +17480,7 @@ F-statistic: 24.62 on 1 and 28 DF,  p-value: 3.081e-05
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>F value is a big number, so F value is not critical. This situation can be also observed by looking the p value for F value. Namely, no variable must be removed from the obtained linear regression in the second step. This new linear regression is assigned to second_regression.</p>
+<p>Moreover, by looking the goodness of fit test, it can be said that there is a decrease in terms of R-squared value, so no variable must be removed.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -17876,6 +17878,7 @@ F-statistic: 71.88 on 3 and 26 DF,  p-value: 1.028e-12
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The biggest F value among 3 models equals to  0.1966609, which means that GPA can be added to new model. However, this variable addition <strong>is non-significant.</strong> So, no new variable will be added to model because instruction given in the step 4 says that <strong>all possible additions are nonsignificant.</strong>  This situation can be also understood by looking the p-value, in other word Pr(&gt;F), for F value.</p>
 <p>Moreover, by looking the summary of the new linear regressions, it can be said that all added new variables are <strong>non-significant</strong> in the models. Both Signif. codes and p-values demonstrate this situation.</p>
+<p>Lastly, by looking the adjusted R-square value, the initial model is better than new variable added models so use of the initial model is logical.</p>
 
 </div>
 </div>
@@ -18995,6 +18998,66 @@ $$ \alpha = 0.1$$
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>We will <strong>fail to reject null hypothesis because p-value(0.662) is larger than determined alpha value(0.1)</strong>. Namely, it is likely to be a zero coefficient for the GPA variable. In other words, GPA is a non-significant variable in terms of influence on sales.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Alternative-way-for-controling-the-improvement-in-the-model-by-GPA-variable">Alternative way for controling the improvement in the model by GPA variable<a class="anchor-link" href="#Alternative-way-for-controling-the-improvement-in-the-model-by-GPA-variable">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>By looking the new model and determined models' anova table, effect of the GPA variable can be observed. In this way, significance of the GPA can be controlled with different way.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">anova</span><span class="p">(</span><span class="n">final_model</span><span class="p">,</span><span class="n">hypothesis_test</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<table>
+<thead><tr><th scope=col>Res.Df</th><th scope=col>RSS</th><th scope=col>Df</th><th scope=col>Sum of Sq</th><th scope=col>F</th><th scope=col>Pr(&gt;F)</th></tr></thead>
+<tbody>
+	<tr><td>27       </td><td>387.4672 </td><td>NA       </td><td>      NA </td><td>       NA</td><td>       NA</td></tr>
+	<tr><td>26       </td><td>384.5585 </td><td> 1       </td><td>2.908754 </td><td>0.1966609</td><td>0.6610981</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>F value is very small, which means that GPA variable is non-significance. In other words, taking zero for coefficient of the GPA variable is possible situation. So, it can be said that it is fail to reject null hypothesis.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
