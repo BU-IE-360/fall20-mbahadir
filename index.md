@@ -33,6 +33,12 @@
 
 [here](Homework4\Homework4.r) is the R Script for Fourth Homework
 
+## Homework 5
+
+[here](Homework5\Homework5.html) is the HTML file for Fifth Homework
+
+[here](Homework5\Homework5.r) is the R Script for Fifth Homework
+
 ## Project
 
 [here](Project\IE 360 Project Report.html) is the HTML file for Project Report
